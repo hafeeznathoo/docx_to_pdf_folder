@@ -22,7 +22,7 @@ for docfile in p.Path(src).glob("**/*"):
     else:
         continue
 
-
+#do the conversion
 for name in targets:
     old_path = targets[name]
     course_name = old_path.parent.name
