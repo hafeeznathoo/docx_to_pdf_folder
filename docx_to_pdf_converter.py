@@ -1,4 +1,4 @@
-
+#import libraries
 
 import pathlib as p
 import docx2pdf
@@ -22,7 +22,7 @@ for docfile in p.Path(src).glob("**/*"):
     else:
         continue
 
-#do the conversion
+#do the conversion and write to target
 for name in targets:
     old_path = targets[name]
     parent_name = old_path.parent.name
